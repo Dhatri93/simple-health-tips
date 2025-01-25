@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Health Tips Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #5cb85c;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f1f1f1;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #5cb85c;
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .tip {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .tip img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Health Tips!</h1>
+        <p>Your guide to a healthier life</p>
+    </header>
+
+    <nav>
+        <a href="#healthy-eating">Healthy Eating</a>
+        <a href="#exercise-tips">Exercise Tips</a>
+        <a href="#mental-health">Mental Health</a>
+        <a href="#common-ailments">Common Ailments</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="healthy-eating" class="container">
+        <h2>Healthy Eating</h2>
+        <div class="tips">
+            <div class="tip">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Gy2STtjPYuXOPUCS1ZIN0RMStH2Z06d4EQ&s" alt="Fruits and Vegetables">
+                <h3>Eat More Fruits and Vegetables</h3>
+                <p>Incorporate a variety of colorful fruits and veggies into your meals daily.</p>
+            </div>
+            <div class="tip">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhk3CE3xO5HrlDJ67y7O-lN-y6LKX5bt1xGg&s" alt="Drink Water">
+                <h3>Stay Hydrated</h3>
+                <p>Drink at least 8 glasses of water each day to keep your body hydrated.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercise-tips" class="container">
+        <h2>Exercise Tips</h2>
+        <div class="tips">
+            <div class="tip">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUwbdmYkJzbRb4_hHpkznxra1ajsxUOWiyw&s">
+                <h3>Daily Exercise</h3>
+                <p>Engage in at least 30 minutes of physical activity every day.</p>
+            </div>
+            <div class="tip">
+                <img src="data:image/jpeg;base64,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" alt="Stretching">
+                <h3>Stretch Regularly</h3>
+                <p>Include stretching in your routine to improve flexibility and prevent injuries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mental-health" class="container">
+        <h2>Mental Health</h2>
+        <div class="tips">
+            <div class="tip">
+                <img src="data:image/jpeg;base64,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" alt="Meditation">
+                <h3>Meditate Daily</h3>
+                <p>Spend 10-15 minutes meditating to relax and clear your mind.</p>
+            </div>
+            <div class="tip">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPRvZbBm_Z0Wbh4d3MG8bmvaVGQIef2JFH4Q&s" alt="Sleep Well">
+                <h3>Get Adequate Sleep</h3>
+                <p>Ensure you sleep for 7-8 hours every night to rejuvenate your mind and body.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="common-ailments" class="container">
+        <h2>Common Ailments</h2>
+        <p>Learn about home remedies and first aid tips for common ailments like colds, headaches, and more.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Health Tips. All rights reserved.</p>
+    </footer>
+</body>
+</html>
